@@ -1,0 +1,103 @@
+.container {
+}
+
+.btnContainer {
+  margin-top: 1rem;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.actionBtn {
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  /* letter-spacing: var(--spacing); */
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+  padding: 0.25rem 0;
+  line-height: 1;
+  outline-color: var(--clr-primary-10);
+}
+
+.actived {
+  background: #fdda1e;
+}
+
+.disAppeared {
+  display: none;
+}
+
+.contentContainer {
+}
+
+.label {
+  font-size: small;
+  color: #555555;
+}
+
+.inputField {
+  margin: 3px 0px;
+  flex: 1 1 40%;
+  margin-bottom: 0.8rem;
+}
+
+/* input[type='text'] { */
+input {
+  width: 100%;
+  padding: 9px;
+  font-weight: 400;
+  cursor: text;
+  outline: 0px;
+  border: 1px solid rgb(227, 233, 243);
+  border-radius: 2px;
+  color: rgb(51, 55, 64);
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 17px;
+  }
+
+  .actionBtn {
+    font-size: 1rem;
+    margin-right: 0.1rem;
+  }
+}
+
+.btnActionContainer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnActionContainer .cancelBtn {
+  background-color: red;
+  border: 1px solid rgb(195 18 18);
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-left: 0px;
+}
+
+.btnActionContainer .saveBtn {
+  background-color: rgb(0, 126, 255);
+  border: 1px solid rgb(0, 126, 255);
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.hasError {
+  border: 1px solid rgb(255, 0, 0) !important;
+}
+
+.helpBlock {
+  font-size: small;
+  color: red;
+}
